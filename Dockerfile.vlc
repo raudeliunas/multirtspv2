@@ -12,5 +12,5 @@ ENV STREAM_PORT="8080"
 
 # Comando para iniciar o VLC com as configurações corretas
 CMD su-exec vlcuser cvlc -vvv $RTSP_URL \
-    --sout "#transcode{vcodec=MJPG,venc=ffmpeg{strict=1},fps=2,width=640,height=480}:standard{access=http{mime=multipart/x-mixed-replace;boundary=--7b3cc56e5f51db803f790dad720ed50a},mux=mpjpeg,dst=0.0.0.0:$STREAM_PORT/}" \
+    --sout "#transcode{vcodec=MJPG,venc=ffmpeg{strict=1},fps=5,width=640,height=480}:standard{access=http{mime=multipart/x-mixed-replace;boundary=--7b3cc56e5f51db803f790dad720ed50a},mux=mpjpeg,dst=0.0.0.0:$STREAM_PORT/}" \
     --no-sout-all --sout-keep --no-daemon
