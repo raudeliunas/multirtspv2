@@ -30,11 +30,12 @@ for i in $(seq 1 $NUM_CAMERAS); do
 done
 
 # Rodar generate-compose
+chmod +x generate-compose.sh
 echo "Gerando arquivos docker-compose.yml e nginx.conf..."
 ./generate-compose.sh
 
 # Limpar containers parados
-echo "🧹 Limpando containers parados..."
+echo "Limpando containers parados..."
 docker container prune -f
 
 # Subir serviços
@@ -53,8 +54,8 @@ fi
 MENU_ITEMS=()
 for i in $(seq 1 $NUM_CAMERAS); do
     PORT=$((9000 + i))
-    URL="https://${HOSTNAME}:${PORT}/"
-    MENU_ITEMS+=("Cam${i}" "📹 $URL")
+    URL="https://${HOSTNAME}:cam$i/"
+    MENU_ITEMS+=("Cam${i}" "$URL")
 done
 
 # Mostrar menu final
