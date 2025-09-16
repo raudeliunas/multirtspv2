@@ -1,0 +1,8 @@
+FROM alpine:latest
+
+RUN apk add --no-cache docker-cli bash
+
+COPY watchdog.sh /watchdog.sh
+RUN chmod +x /watchdog.sh
+
+CMD ["/watchdog.sh"]
