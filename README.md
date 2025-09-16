@@ -15,9 +15,10 @@ Docker Compose
 
 1. Clone the repository
 git clone https://github.com/raudeliunas/multirtspv2.git
-cd multirtspv2
 
-2. Run the setup script
+2. cd multirtspv2
+
+3. Run the setup script
 ./iniciar.sh
 
 
@@ -30,7 +31,7 @@ rtsp://admin:password@192.168.1.2/Streaming/Channels/102
 
 The script will update .env, docker-compose.yml, and nginx.conf automatically.
 
-3. Access the streams
+4. Access the streams
 
 Once running, streams will be available at:
 
@@ -39,7 +40,7 @@ https://localhost/cam2
 ...
 https://localhost/camX
 
-4. Stop the containers
+5. Stop the containers
 docker compose down
 
 ⚙️ Additional Configuration
