@@ -13,14 +13,13 @@ Docker Compose
 
 🚀 Getting Started
 
-1. Clone the repository
-git clone https://github.com/raudeliunas/multirtspv2.git
+1. Clone the repository: git clone https://github.com/raudeliunas/multirtspv2.git
 
 2. cd multirtspv2
 
-3. Run the setup script
-chmod +x iniciar.sh
-./iniciar.sh
+3. Make the script executable: chmod +x iniciar.sh
+
+4. Run the setup script: ./iniciar.sh
 
 
 Select the number of cameras you want to add.
