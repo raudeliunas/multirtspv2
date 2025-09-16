@@ -19,6 +19,7 @@ git clone https://github.com/raudeliunas/multirtspv2.git
 2. cd multirtspv2
 
 3. Run the setup script
+chmod +x iniciar.sh
 ./iniciar.sh
 
 
