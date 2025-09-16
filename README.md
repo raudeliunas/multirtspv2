@@ -52,7 +52,7 @@ A self-signed certificate is included for the host https://cameras.
 
 To download it, open:
 
-https://localhost
+https://localhost/certificado.html
 
 Local Hostname Setup (Windows)
 
